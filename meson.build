@@ -3,7 +3,7 @@ project('Deblock', 'cpp',
     license: 'GPL-2.0-or-later',
     license_files: 'LICENSE',
     meson_version: '>=1.2.3',
-    version: '7.1',
+    version: '8.0',
 )
 
 incdir = include_directories(

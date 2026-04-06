@@ -44,7 +44,7 @@ static constexpr int alphas[] = {
     71, 80, 90, 101, 113,
     127, 144, 162, 182,
     203, 226, 255, 255,
-    255, 255, 255, 255, 255, 255, 255, 255, 255 // added by Fizick 
+    255, 255, 255, 255, 255, 255, 255, 255, 255 // added by Fizick
 };
 
 static constexpr int betas[] = {
@@ -58,7 +58,7 @@ static constexpr int betas[] = {
     12, 13, 13, 14, 14,
     15, 15, 16, 16, 17,
     17, 18, 18,
-    19, 20, 21, 22, 23, 24, 25, 26, 27 // added by Fizick 
+    19, 20, 21, 22, 23, 24, 25, 26, 27 // added by Fizick
 };
 
 static constexpr int cs[] = {
@@ -422,7 +422,7 @@ VS_EXTERNAL_API(void) VapourSynthPluginInit2(VSPlugin* plugin, const VSPLUGINAPI
     vspapi->configPlugin("com.holywu.deblock",
                          "deblock",
                          "It does a deblocking of the picture, using the deblocking filter of h264",
-                         VS_MAKE_VERSION(7, 1),
+                         VS_MAKE_VERSION(8, 0),
                          VAPOURSYNTH_API_VERSION,
                          0,
                          plugin);
