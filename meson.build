@@ -6,16 +6,11 @@ project('Deblock', 'cpp',
     version: '8.0',
 )
 
-incdir = include_directories(
-    run_command(
-        find_program('python', 'python3'),
-        '-c',
-        'import vapoursynth as vs; print(vs.get_include())',
-        check: true,
-    ).stdout().strip(),
-)
-
 py = import('python').find_installation(pure: false)
+
+incdir = include_directories(
+    run_command(py, '-c', 'import vapoursynth as vs; print(vs.get_include())', check: true).stdout().strip(),
+)
 
 shared_module('deblock',
     files('Deblock/Deblock.cpp'),
